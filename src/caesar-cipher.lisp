@@ -1,13 +1,12 @@
 (in-package :cl-user)
 
-(defpackage caesar-cipher
-  (:use :cl))
+(defpackage #:caesar-cipher
+  (:use :cl)
+  (:export #:main))
 
 (in-package :caesar-cipher)
 
-
 (defconstant +ALPHASIZE+ 26)
-
 
 (defun let-to-int (c)
   "comvert the lowercase character into an integer between 0 and 25"
